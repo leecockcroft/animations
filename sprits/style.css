@@ -1,0 +1,34 @@
+*{
+  margin:0;
+padding:0;
+}
+
+#wrapper{
+  position:relative;
+  height:100vh;
+  width:100%;
+}
+
+.sprite{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width:936px;
+  height:643px;
+  background: url('../images/spritesheet.png');
+  animation: santa 2s steps(11) infinite, movesanta 5s linear 2;
+}
+
+
+@keyframes santa{
+
+from{background-position: 0}
+to{background-position: 10296px}
+}
+
+@keyframes movesanta{
+
+from{left:0%}
+to{left:100%}
+}
